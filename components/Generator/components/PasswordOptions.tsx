@@ -33,6 +33,7 @@ const PasswordOptions = ({
       styles={{
         input: {
           background: includeUppercase ? '#a4ffaf' : 'transparent',
+          border: includeUppercase ? 'none' : '2px solid white',
         },
       }}
     />
@@ -47,6 +48,7 @@ const PasswordOptions = ({
       styles={{
         input: {
           background: includeLowercase ? '#a4ffaf' : 'transparent',
+          border: includeLowercase ? 'none' : '2px solid white',
         },
       }}
     />
@@ -61,6 +63,7 @@ const PasswordOptions = ({
       styles={{
         input: {
           background: includeNumbers ? '#a4ffaf' : 'transparent',
+          border: includeNumbers ? 'none' : '2px solid white',
         },
       }}
     />
@@ -75,6 +78,7 @@ const PasswordOptions = ({
       styles={{
         input: {
           background: includeSymbols ? '#a4ffaf' : 'transparent',
+          border: includeSymbols ? 'none' : '2px solid white',
         },
       }}
     />
