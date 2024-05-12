@@ -24,12 +24,7 @@ const PasswordDisplay = ({ password }: { password: string }) => {
 
       <CopyButton value={password}>
         {({ copied, copy }) => (
-          <Button
-            onClick={copy}
-            variant="transparent"
-            className={classes.copyButton}
-            px="0"
-          >
+          <Button onClick={copy} variant="transparent" className={classes.copyButton} px="0">
             <Text size="xs" tt="uppercase" c={copied ? '#a4ffaf' : 'transparent'} pr="xs">
               Copied
             </Text>
@@ -39,8 +34,9 @@ const PasswordDisplay = ({ password }: { password: string }) => {
                   hoveredCopy && password.length === 0 ? '/icon-copy-hover.svg' : '/icon-copy.svg'
                 }
                 alt="Copy Icon"
-                width={matches ? 16 : 20}
-                height={matches ? 16 : 20}
+                w={matches ? 14 : 20}
+                h={matches ? 14 : 20}
+                fit="contain"
               />
             </Box>
           </Button>

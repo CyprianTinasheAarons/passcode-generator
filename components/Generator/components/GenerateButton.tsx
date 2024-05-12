@@ -21,10 +21,9 @@ const GenerateButton = ({ generatePassword }: { generatePassword: () => void }) 
             Generate
           </Text>
           <Image
-            src="icon-arrow-right.svg"
+            src={hovered ? 'icon-arrow-right-hover.svg' : 'icon-arrow-right.svg'}
             width={12}
             height={12}
-            color={hovered ? '#a4ffaf' : 'black'}
             ml="sm"
           />
         </Center>
