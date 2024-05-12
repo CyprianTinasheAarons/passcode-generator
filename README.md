@@ -14,6 +14,11 @@ This template comes with the following features:
 - ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
 
 ## npm scripts
+### Installation scripts
+
+- `pnpm install` – install all dependencies with [pnpm](https://pnpm.io/)
+- `yarn install` – install all dependencies with [yarn](https://yarnpkg.com/)
+- `npm install` – install all dependencies with npm
 
 ### Build and dev scripts
 
