@@ -12,6 +12,9 @@ const PasswordDisplay = ({ password }: { password: string }) => {
   return (
     <Center bg="#24232C" px="xs" inline ref={refCopy}>
       <TextInput
+        styles={{
+          input: { color: 'white' },
+        }}
         variant="transparent"
         radius="xs"
         placeholder="P4$5W0rD!"
