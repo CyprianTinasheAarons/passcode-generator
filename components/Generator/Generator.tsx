@@ -45,7 +45,7 @@ export function Generator() {
               setIncludeSymbols={setIncludeSymbols}
             />
             <PasswordStrength strength={strength} />
-            <GenerateButton generatePassword={generatePassword} strength={strength} />
+            <GenerateButton generatePassword={generatePassword} />
           </Box>
         </Box>
       </Center>
