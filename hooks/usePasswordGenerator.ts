@@ -24,7 +24,7 @@ const usePasswordGenerator = () => {
       ).join('');
       setPassword(randomPassword);
       // Check the strength based on the complexity of the password
-      setStrength('Undefined'); // This will evaluate to 'Undefined' as no character types are included
+      setStrength(passwordStrength()); // This will evaluate to 'Undefined' as no character types are included
       return;
     }
     let validChars = '';
