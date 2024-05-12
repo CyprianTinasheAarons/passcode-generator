@@ -9,3 +9,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.textInput {
+  color: white;
+  &::placeholder {
+    color: #e6e5ea;
+    opacity: 0.5;
+  }
+}
