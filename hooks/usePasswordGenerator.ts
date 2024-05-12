@@ -17,10 +17,16 @@ const usePasswordGenerator = () => {
     const upperLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
     if (!includeUppercase && !includeLowercase && !includeNumbers && !includeSymbols) {
-      setPassword('');
+      const allChars = numbers + symbols + lowerLetters + upperLetters;
+      const randomPassword = Array.from(
+        { length },
+        () => allChars[Math.floor(Math.random() * allChars.length)]
+      ).join('');
+      setPassword(randomPassword);
+      // Check the strength based on the complexity of the password
+      setStrength('Undefined'); // This will evaluate to 'Undefined' as no character types are included
       return;
     }
-
     let validChars = '';
     if (includeLowercase) validChars += lowerLetters;
     if (includeUppercase) validChars += upperLetters;
